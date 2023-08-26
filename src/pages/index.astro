@@ -4,49 +4,19 @@ import PageLayout from "@/layouts/Base";
 import PostPreview from "@/components/blog/PostPreview";
 import SocialList from "@/components/SocialList";
 import { sortMDByDate } from "@/utils";
+import TechBadge from "../components/TechBadge.astro";
+import { technologies } from "../utils/data";
 
 const MAX_POSTS = 10;
 const allPosts = await getCollection("post");
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 
-const cactusTech: Array<{ title: string; desc: string; href: string }> = [
-	{
-		title: "HTML 5",
-		desc: "I enjoy writing html.",
-		href: "https://developer.mozilla.org/en-US/docs/Glossary/HTML5",
-	},
-
-	{
-		title: "Tailwind CSS",
-		desc: "Rapidly build modern websites without ever leaving your HTML.",
-		href: "https://tailwindcss.com",
-	},
-	{
-		title: "JavaScript",
-		desc: "Simple and easy-to-use markup language.",
-		href: "https://www.markdownguide.org/",
-	},
-	{
-		title: "TypeScript",
-		desc: "Markdown for the component era.",
-		href: "https://mdxjs.com/",
-	},
-	{
-		title: "Next.js",
-		desc: "Generating png Open Graph images for blog posts.",
-		href: "https://github.com/vercel/satori",
-	},
-	{
-		title: "Node.js",
-		desc: "A fully static search library.",
-		href: "https://pagefind.app/",
-	},
-	{
-		title: "Git",
-		desc: "An easy to use Icon component for Astro.",
-		href: "https://github.com/natemoo-re/astro-icon#readme",
-	},
-];
+interface TechBadgeProps {
+	name: string;
+	imgSrc: string;
+	altSrc: string;
+	link: string;
+}
 ---
 
 <PageLayout meta={{ title: "Home" }}>
@@ -76,22 +46,14 @@ const cactusTech: Array<{ title: string; desc: string; href: string }> = [
 			I like playing around and learning new programming languages, frameworks and libraries. These
 			are the technologies that I love working with:
 		</p>
-		<ul class="mt-2 space-y-4 sm:space-y-2">
+		<div class="mt-10 grid grid-cols-2 gap-y-5 md:grid-cols-3 md:gap-x-4 md:gap-y-8">
 			{
-				cactusTech.map(({ href, title, desc }) => (
-					<li>
-						<a
-							href={href}
-							target="_blank"
-							rel="noopener noreferrer"
-							class="cactus-link inline-block"
-						>
-							{title}
-						</a>
-						:<p class="inline-block sm:mt-2">{desc}</p>
-					</li>
+				technologies.map((tech: TechBadgeProps) => (
+					<a href={tech.link} class="cursor-pointer text-gray-300">
+						<TechBadge {...tech} />
+					</a>
 				))
 			}
-		</ul>
+		</div>
 	</section>
 </PageLayout>

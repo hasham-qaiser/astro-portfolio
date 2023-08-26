@@ -2,7 +2,7 @@
 
 An attempt to create a miniminal portfolio, using: [Astro](https://astro.build/).
 
-![screenshot](/public/images/blacklogo.png)
+![hqlogo](/public/blacklogo.png)
 
 ## 📚 Stack
 

@@ -1,11 +1,5 @@
 const technologies = [
 	{
-		name: "Astro",
-		imgSrc: "https://bestofjs.org/logos/astro.dark.svg",
-		altSrc: "Astro Logo",
-		link: "https://astro.build/",
-	},
-	{
 		name: "JavaScript",
 		imgSrc:
 			"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/480px-JavaScript-logo.png",
@@ -18,13 +12,7 @@ const technologies = [
 		altSrc: "Node.js Logo",
 		link: "https://nodejs.org/en/",
 	},
-	{
-		name: "Python",
-		imgSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png",
-		altSrc: "Python Logo",
-		link: "https://www.python.org/",
-	},
+
 	{
 		name: "React",
 		imgSrc:
@@ -50,12 +38,6 @@ const technologies = [
 		imgSrc: "https://static.netify.ai/logos/v/e/r/irepry/icon.png?v=1",
 		altSrc: "Next.js Logo",
 		link: "https://nextjs.org/",
-	},
-	{
-		name: "Go",
-		imgSrc: "https://geekole.com/wp-content/uploads/2022/12/golang_logo_gopher_geekole.png",
-		altSrc: "Golang Logo",
-		link: "https://go.dev/",
 	},
 ];
 

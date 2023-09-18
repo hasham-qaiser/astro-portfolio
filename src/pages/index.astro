@@ -23,13 +23,27 @@ interface TechBadgeProps {
 	<section>
 		<h1 class="title mb-3">Hey there!</h1>
 		<p class="mt-4 text-left">
-			I’m Hasham. Frontend dev interested in web development and UI/UX design. Currently looking for
-			a full-time role, Lets connect!
+			I’m Hasham. Frontend dev interested in<strong> web development</strong> and <strong
+				>UI/UX design.</strong
+			> Currently looking for a full-time role, Lets connect!
 		</p>
 		<SocialList />
 	</section>
 	<section aria-label="Blog post list" class="mt-16">
 		<h2 class="title mb-4 text-xl">Projects</h2>
+
+		<p class="mb-4 text-left">
+			I've worked on several projects in the past, some of which are ongoing works in progress.
+			Lately, I've developed a keen interest in open-source initiatives, and at the moment, I'm
+			actively contributing to
+			<a
+				href="https://expungeassist.org/#/"
+				target="_blank"
+				class="mb-4 rounded-lg px-2 py-1 hover:bg-green-300 hover:text-gray-900"
+				><strong>Expunge Assist</strong>
+			</a>
+		</p>
+
 		<ul class="space-y-4 sm:space-y-2">
 			{
 				allPostsByDate.map((p) => (

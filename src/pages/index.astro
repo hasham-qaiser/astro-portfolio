@@ -23,11 +23,28 @@ interface TechBadgeProps {
 	<section>
 		<h1 class="title mb-3">Hey there!</h1>
 		<p class="mt-4 text-left">
-			I’m Hasham. Frontend dev interested in<strong> web development</strong> and <strong
-				>UI/UX design.</strong
-			> Currently looking for a full-time role, Lets connect!
+			I’m Hasham. Frontend aficionado based in sunny southern California. My interests extends to
+			AI, functional UI/UX designs, and pioneering web experiences that transcend convention.
+			Currently looking for a full-time role, Lets connect!
 		</p>
 		<SocialList />
+	</section>
+
+	<section class="mt-16">
+		<h2 class="title mb-4 text-xl">Technologies</h2>
+		<p class="mt-4 text-left">
+			I like playing around and learning new programming languages, frameworks and libraries. These
+			are the technologies that I love working with:
+		</p>
+		<div class="mt-10 grid grid-cols-2 gap-y-5 md:grid-cols-3 md:gap-x-4 md:gap-y-8">
+			{
+				technologies.map((tech: TechBadgeProps) => (
+					<a href={tech.link} class="cursor-pointer text-gray-300">
+						<TechBadge {...tech} />
+					</a>
+				))
+			}
+		</div>
 	</section>
 	<section aria-label="Blog post list" class="mt-16">
 		<h2 class="title mb-4 text-xl">Projects</h2>
@@ -53,21 +70,5 @@ interface TechBadgeProps {
 				))
 			}
 		</ul>
-	</section>
-	<section class="mt-16">
-		<h2 class="title mb-4 text-xl">Technologies</h2>
-		<p class="mt-4 text-left">
-			I like playing around and learning new programming languages, frameworks and libraries. These
-			are the technologies that I love working with:
-		</p>
-		<div class="mt-10 grid grid-cols-2 gap-y-5 md:grid-cols-3 md:gap-x-4 md:gap-y-8">
-			{
-				technologies.map((tech: TechBadgeProps) => (
-					<a href={tech.link} class="cursor-pointer text-gray-300">
-						<TechBadge {...tech} />
-					</a>
-				))
-			}
-		</div>
 	</section>
 </PageLayout>

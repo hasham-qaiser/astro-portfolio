@@ -11,11 +11,11 @@ const meta = {
 
 <PageLayout meta={meta}>
 	<div class="space-y-6">
-		<h1 class="title">About</h1>
+		<h1 class="font-bold lg:text-4xl">About</h1>
 		<Image
 			src={aboutImg}
 			class="mx-auto mt-10 w-80 rounded-xl"
-			alt="A cartoon cactus looking at the 'Astro.build' logo"
+			alt="portfolio image"
 			loading="eager"
 			fetchpriority="high"
 		/>
@@ -27,17 +27,25 @@ const meta = {
 			experiences that transcend convention.
 		</p>
 		<div class="flex justify-center"></div>
-		<p>Here are my some of my favorite programming languages and other things I love:</p>
+		<h1 class="title">Experience:</h1>
+
 		<ul class="list-inside list-disc">
-			<li>HTML</li>
-			<li>React</li>
-			<li>Next.Js</li>
-			<li>Tailwind</li>
-			<li>JavaScript</li>
-			<li>Typescript</li>
-			<li>Art</li>
+			<li>
+				Part of the development team for <a href="https://expungeassist.org/#/"
+					><strong>Expunge Assist</strong>
+				</a>
+				<br class="text-sm" /> Aug 2023 - Current
+			</li>
+			<li class="mt-2">
+				Freelance Frontend Developer
+				<br /> View some of my work <a href="https://www.hasham.xyz/posts/"
+					><strong>here</strong>
+
+					<br class="text-sm" /> Oct 2022 - Current
+				</a>
+			</li>
 		</ul>
-		<p>
+		<p class="mt-8">
 			Clone or fork my <a
 				class="cactus-link inline-block"
 				href="https://github.com/hasham-qaiser/astro-portfolio"

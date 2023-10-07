@@ -21,6 +21,19 @@ const technologies = [
 		link: "https://reactjs.org/",
 	},
 	{
+		name: "Astro.js",
+		imgSrc: "https://api.iconify.design/vscode-icons:file-type-astro.svg",
+		altSrc: "Astro.js Logo",
+		link: "https://astro.build/",
+	},
+	{
+		name: "Vite.js",
+		imgSrc: "https://api.iconify.design/vscode-icons:file-type-vite.svg",
+		altSrc: "Vite.js Logo",
+		link: "https://vitejs.dev/",
+	},
+
+	{
 		name: "TypeScript",
 		imgSrc:
 			"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png",
@@ -38,6 +51,12 @@ const technologies = [
 		imgSrc: "https://static.netify.ai/logos/v/e/r/irepry/icon.png?v=1",
 		altSrc: "Next.js Logo",
 		link: "https://nextjs.org/",
+	},
+	{
+		name: "HTML",
+		imgSrc: "https://api.iconify.design/vscode-icons:file-type-html.svg",
+		altSrc: "HTML 5 Logo",
+		link: "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics",
 	},
 ];
 

@@ -42,13 +42,9 @@ Any static assets, like images, can be placed in the `public/` directory.
 This app requires Node.js v16.15.0 or later.
 
 ```bash
-git clone git@github.com:dreyfus92/astro-portfolio.git
+git clone git@github.com:hasham-qaiser/astro-portfolio.git
 cd astro-portfolio
-npm install -g pnpm
-pnpm i
-pnpm dev
+npm install i
+cd astro-portfolio
+npm run dev
 ```
-
-## 📝 License
-
-This project is licensed under the [MIT license](/LICENSE).

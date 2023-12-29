@@ -34,11 +34,11 @@ export const menuLinks: Array<{ title: string; path: string }> = [
 		path: "/posts/",
 	},
 	{
-		title: "Resume",
-		path: "https://cv-gamma-gold.vercel.app/",
-	},
-	{
 		title: "Blog",
 		path: "https://hashamqaiser.substack.com?utm_source=navbar&utm_medium=web&r=20pic5",
+	},
+	{
+		title: "Resume",
+		path: "https://cv-gamma-gold.vercel.app/",
 	},
 ];

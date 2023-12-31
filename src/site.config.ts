@@ -30,12 +30,8 @@ export const menuLinks: Array<{ title: string; path: string }> = [
 	},
 
 	{
-		title: "Projects",
-		path: "/posts/",
-	},
-	{
 		title: "Blog",
-		path: "https://hashamqaiser.substack.com?utm_source=navbar&utm_medium=web&r=20pic5",
+		path: "/posts/",
 	},
 	{
 		title: "Resume",

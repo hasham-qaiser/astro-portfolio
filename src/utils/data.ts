@@ -48,7 +48,7 @@ const technologies = [
 	},
 	{
 		name: "Next.js",
-		imgSrc: "https://static.netify.ai/logos/v/e/r/irepry/icon.png?v=1",
+		imgSrc: "https://api.iconify.design/logos:nextjs-icon.svg",
 		altSrc: "Next.js Logo",
 		link: "https://nextjs.org/",
 	},

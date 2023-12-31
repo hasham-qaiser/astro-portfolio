@@ -1,6 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+	font-family: "Switzer", sans-serif;
+	src: url("'https://fonts.cdnfonts.com/css/switzer'");
+	font-weight: normal;
+	font-style: normal;
+}
 
 @layer base {
 	:root {
@@ -28,6 +34,7 @@
 	}
 
 	html body {
-		@apply mx-auto flex h-full max-w-3xl flex-col bg-bgColor px-8 pt-16 font-mono text-sm font-normal text-textColor antialiased;
+		@apply mx-auto flex h-full max-w-3xl flex-col bg-bgColor px-8 pt-16   font-normal text-textColor antialiased;
+		font-family: "Switzer", sans-serif;
 	}
 }

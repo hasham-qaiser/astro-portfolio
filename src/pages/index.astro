@@ -10,6 +10,23 @@ import { technologies } from "../utils/data";
 const MAX_POSTS = 10;
 const allPosts = await getCollection("post");
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
+const myProjects: Array<{ title: string; desc: string; href: string }> = [
+	{
+		title: "Astro Portfolio",
+		desc: "A minimal Portfolio built with Astro.js",
+		href: "https://github.com/hasham-qaiser/astro-portfolio",
+	},
+	{
+		title: "Jpeg Explorer",
+		desc: "NFT wallet viewer for the ethereum blockchain",
+		href: "https://jpeg-explorer.vercel.app/",
+	},
+	{
+		title: "Weather App",
+		desc: "A simple weather app",
+		href: "http://weather-app-seven-self.vercel.app/",
+	},
+];
 
 interface TechBadgeProps {
 	name: string;
@@ -25,7 +42,8 @@ interface TechBadgeProps {
 		<p class="mt-4 text-left">
 			I’m Hasham. Frontend aficionado based in sunny southern California. My interests extends to
 			AI, functional UI/UX designs, and pioneering web experiences that transcend convention.
-			Currently looking for a full-time role, Lets connect!
+			Currently I'm building an MVP from scratch for a stealth startup and contributing at Hack For
+			LA.
 		</p>
 		<SocialList />
 	</section>
@@ -46,25 +64,46 @@ interface TechBadgeProps {
 			}
 		</div>
 	</section>
-	<section aria-label="Blog post list" class="mt-16">
-		<h2 class="title mb-4 text-xl">Projects</h2>
 
+	<section class="mt-16">
+		<h2 class="title mb-4 text-xl">Projects</h2>
 		<p class="mb-4 text-left">
 			I've worked on several projects in the past, with some still ongoing as works in progress.
-			Recently, I've been involved in constructing an MVP from scratch for a stealth startup. My
-			growing interest in open-source initiatives has led me to actively contribute to
-			<a
-				href="https://expungeassist.org/#/"
+			Recently my growing interest in open-source initiatives has led me to actively contribute to<a
+				href="https://github.com/hackforla/expunge-assist"
 				target="_blank"
-				class="mb-4 rounded-lg px-2 py-1 hover:bg-green-300 hover:text-gray-900"
-				><strong>Expunge Assist</strong>
-			</a>and<a
+				class="mb-4 rounded-lg px-1 py-1 hover:bg-green-300 hover:text-gray-900"
+			>
+				<strong>Expunge Assist</strong>
+			</a>
+			and<a
 				href="https://github.com/withastro/starlight"
 				target="_blank"
-				class="mb-4 rounded-lg px-2 py-1 hover:bg-green-300 hover:text-gray-900"
+				class="mb-4 rounded-lg px-1 py-1 hover:bg-green-300 hover:text-gray-900"
 				><strong>Starlight🌟</strong>
 			</a>
 		</p>
+
+		<ul class="space-y-4 sm:space-y-2">
+			{
+				myProjects.map(({ href, title, desc }) => (
+					<li>
+						<a
+							href={href}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="cactus-link inline-block"
+						>
+							{title}
+						</a>
+						:<p class="inline-block sm:mt-2">{desc}</p>
+					</li>
+				))
+			}
+		</ul>
+	</section>
+	<section aria-label="Blog post list" class="mt-16">
+		<h2 class="title mb-4 text-xl">Blog</h2>
 
 		<ul class="space-y-4 sm:space-y-2">
 			{

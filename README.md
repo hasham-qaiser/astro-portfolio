@@ -2,8 +2,6 @@
 
 An attempt to create a miniminal portfolio, using: [Astro](https://astro.build/).
 
-![hqlogo](/public/blacklogo.png)
-
 ## 📚 Stack
 
 - Platform: [Astro](https://astro.build/)

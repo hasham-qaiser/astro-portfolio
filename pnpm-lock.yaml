@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -17,6 +17,9 @@ dependencies:
   astro-icon:
     specifier: ^0.8.1
     version: 0.8.1
+  lucide:
+    specifier: ^0.312.0
+    version: 0.312.0
   satori:
     specifier: 0.10.1
     version: 0.10.1
@@ -3544,6 +3547,10 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
+
+  /lucide@0.312.0:
+    resolution: {integrity: sha512-55fRrT/HuYDJqhLEfxmbIT91GiYNg8eB2tnPrI3gsFgHMgCAMXpPSYl9YYffQUz4t2OreO1SLn74JWTLr9J43A==}
+    dev: false
 
   /magic-string@0.27.0:
     resolution: {integrity: sha512-8UnnX2PeRAPZuN12svgR9j7M1uWMovg/CEnIwIG0LFkXSJJe4PdfUGiTGl8V9bsBHFUtfVINcSyYxd7q+kx9fA==}

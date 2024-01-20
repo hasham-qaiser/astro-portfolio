@@ -22,7 +22,7 @@ const technologies = [
 	},
 	{
 		name: "Astro.js",
-		imgSrc: "https://api.iconify.design/vscode-icons:file-type-astro.svg",
+		imgSrc: "https://api.iconify.design/devicon:astro.svg",
 		altSrc: "Astro.js Logo",
 		link: "https://astro.build/",
 	},

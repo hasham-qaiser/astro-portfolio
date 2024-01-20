@@ -1,8 +1,14 @@
-# 🧑🏻‍💻 My personal website
+# Credits
+
+[astro-theme-cactus](https://github.com/chrismwilliams/astro-theme-cactus)
+
+I used the astro theme cactus starter for this website, But has been heavily re-worked to fit my personal style and preffered aesthetic.
+
+## hasham.xyz
 
 An attempt to create a miniminal portfolio, using: [Astro](https://astro.build/).
 
-## 📚 Stack
+## Stack
 
 - Platform: [Astro](https://astro.build/)
 - Deployment: [Vercel](https://vercel.com/)

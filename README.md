@@ -2,7 +2,7 @@
 
 [astro-theme-cactus](https://github.com/chrismwilliams/astro-theme-cactus)
 
-I used the astro theme cactus starter for this website, But has been heavily re-worked to fit my personal style and preffered aesthetic.
+I used the astro theme cactus starter for this website, But has been heavily re-worked to fit my personal style and preferred aesthetic.
 
 ## hasham.xyz
 

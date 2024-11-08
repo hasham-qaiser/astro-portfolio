@@ -77,4 +77,4 @@ I prefer a minimal, distraction-free setup where a single monitor provides suffi
 ### Advice for Others
 Build your setup gradually. Don't feel pressured to purchase trending items - focus on what works for you. Whether your space is meticulously organized or creative chaos, what matters is that it enables your productivity and reflects your personality.
 
-![corner view](./corner.JPG)
+![corner view](./corner.png)

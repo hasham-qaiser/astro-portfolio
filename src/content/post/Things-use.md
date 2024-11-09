@@ -38,13 +38,13 @@ My home office features a dual-desk setup: a primary workspace for work and dail
 - Specs: 1440p resolution, 144Hz refresh rate
 - Mount: Amazon monitor arm
 
+## Desk Gear & Audio
+
 ### Input Devices
 - Keyboards: HHKB Type S, Realforce 87U (Topre switches are unmatched)
 - Mice: Logitech MX Master 3, Logitech Pro X Superlight
 - Dock: CalDigit TS3
 - Headphones: Airpods Pro 2
-
-## Accessories
 
 ### Audio Setup
 - Monitors: JBL 305P MkII 5-inch Studio Monitors

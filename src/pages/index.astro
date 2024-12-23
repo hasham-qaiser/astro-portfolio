@@ -6,6 +6,8 @@ import SocialList from "@/components/SocialList";
 import { sortMDByDate } from "@/utils";
 import TechBadge from "../components/TechBadge.astro";
 import { technologies } from "../utils/data";
+import { Icon } from "astro-icon";
+
 
 const MAX_POSTS = 10;
 const allPosts = await getCollection("post");
@@ -43,14 +45,30 @@ interface TechBadgeProps {
 
 <PageLayout meta={{ title: "Home" }}>
 	<section>
-		<h1 class="title mb-3">Hey there!</h1>
-		<p class="mt-4 text-left">
-			I’m Hasham. Frontend aficionado based in sunny southern California. My interests extends to
-			AI, functional UI/UX designs, and pioneering web experiences that transcend convention.
-			Currently I'm building an MVP from scratch for a stealth startup and contributing at Hack For
-			LA.
+		<span class="text-xl font-bold sm:text-2xl">Hasham Qaiser</span>
+		<div class="flex items-center gap-2 mt-1"><Icon class="h-5 w-5" name="mappin"/>
+			Los Angeles, California
+		</div>
+		
+		
+		
+		<p class="mt-6 text-left">
+			I'm a Software Engineer with a passion for providing distininctive user experiences. Currently working at<a
+				href="https://www.five9nes.io/"
+				target="_blank"
+				class="rounded-lg px-1 py-1 font-bold hover:text-[#EF6C00]"
+			>
+				<span>Five9nes</span>
+			</a>implementing SRE practices through DevOps and microservices, while contributing to community projects at <a
+			href="https://www.hackforla.org/"
+			target="_blank"
+			class="rounded-lg font-bold hover:text-[#EF6C00]"
+		>
+			<span>Hack For LA</span>.
+			</a>
 		</p>
-		<SocialList />
+		<div class="mt-1"> <SocialList /> </div>
+		
 	</section>
 
 	<section class="mt-16">
@@ -74,15 +92,13 @@ interface TechBadgeProps {
 		<h2 class="title mb-4 text-xl">Projects</h2>
 		<p class="mb-4 text-left">
 			I've worked on several projects in the past, with some still ongoing as works in progress.
-			Recently my growing interest in open-source initiatives has led me to actively contribute to
-			<a
+			Recently my growing interest in open-source initiatives has led me to actively contribute to<a
 				href="https://github.com/hackforla/expunge-assist"
 				target="_blank"
 				class="rounded-lg px-1 py-1 font-bold hover:text-[#EF6C00]"
 			>
 				<span>Expunge Assist</span>
 			</a>
-			
 			My dedication to open-source is driven by a dual purpose: enhancing the tools that are integral
 			to my own development process and, by extension, refining the experiences of fellow developers
 			globally.

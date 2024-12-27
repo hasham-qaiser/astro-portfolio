@@ -35,6 +35,25 @@ const myProjects: Array<{ title: string; desc: string; href: string }> = [
 	},
 ];
 
+const workExperience: Array<{ title: string; desc: string; href: string }> = [
+	{
+		title: "Five9nes",
+		desc: "Fullstack Engineer (november 2024 - present)",
+		href: "https://www.five9nes.io/",
+	},
+	{
+		title: "Expunge Assist",
+		desc: "Volunteer Frontend Engineer (september 2023 - present)",
+		href: "https://expungeassist.org/",
+	},
+	{
+		title: "Onward Justice",
+		desc: "Frontend Engineer Intern (august 2023 - january 2024)",
+		href: "https://onwardjustice.com/",
+	},
+	
+];
+
 interface TechBadgeProps {
 	name: string;
 	imgSrc: string;
@@ -53,7 +72,7 @@ interface TechBadgeProps {
 		
 		
 		<p class="mt-6 text-left">
-			I'm a Software Engineer with a passion for providing distininctive user experiences. Currently working at<a
+			I'm a Software Engineer with a passion for providing distininctive user experiences. Currently at<a
 				href="https://www.five9nes.io/"
 				target="_blank"
 				class="rounded-lg px-1 py-1 font-bold hover:text-[#EF6C00]"
@@ -72,38 +91,33 @@ interface TechBadgeProps {
 	</section>
 
 	<section class="mt-16">
-		<h2 class="title mb-4 text-xl">Technologies</h2>
-		<p class="mt-4 text-left">
-			I like playing around and learning new programming languages, frameworks and libraries. These
-			are the technologies that I love working with:
-		</p>
-		<div class="mt-10 grid grid-cols-2 gap-y-5 md:grid-cols-3 md:gap-x-4 md:gap-y-8">
+		<h2 class="title mb-4 text-xl">Work</h2>
+		
+
+		<ul class="space-y-4 sm:space-y-2">
 			{
-				technologies.map((tech: TechBadgeProps) => (
-					<a href={tech.link} class="cursor-pointer text-gray-300">
-						<TechBadge {...tech} />
-					</a>
+				workExperience.map(({ href, title, desc }) => (
+					<li>
+						<a
+							href={href}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="cactus-link inline-block"
+						>
+							{title}
+						</a>
+						:<p class="inline-block sm:mt-2">{desc}</p>
+					</li>
 				))
 			}
-		</div>
+		</ul>
 	</section>
+
+	
 
 	<section class="mt-16">
 		<h2 class="title mb-4 text-xl">Projects</h2>
-		<p class="mb-4 text-left">
-			I've worked on several projects in the past, with some still ongoing as works in progress.
-			Recently my growing interest in open-source initiatives has led me to actively contribute to<a
-				href="https://github.com/hackforla/expunge-assist"
-				target="_blank"
-				class="rounded-lg px-1 py-1 font-bold hover:text-[#EF6C00]"
-			>
-				<span>Expunge Assist</span>
-			</a>
-			My dedication to open-source is driven by a dual purpose: enhancing the tools that are integral
-			to my own development process and, by extension, refining the experiences of fellow developers
-			globally.
-		</p>
-
+		
 		<ul class="space-y-4 sm:space-y-2">
 			{
 				myProjects.map(({ href, title, desc }) => (

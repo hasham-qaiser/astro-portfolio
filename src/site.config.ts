@@ -33,8 +33,4 @@ export const menuLinks: Array<{ title: string; path: string }> = [
 		title: "Blog",
 		path: "/posts/",
 	},
-	{
-		title: "Resume",
-		path: "https://cv-gamma-gold.vercel.app/",
-	},
 ];
